@@ -9,14 +9,14 @@ public class Main {
 
         System.out.println("Welcome to User Registration Problem");
 
-        System.out.println("Enter Last Name : ");
-        String lname = scanner.nextLine();
-        Boolean b = Pattern.matches("^[A-Z]{1}[a-z]{2,}$",lname);
+        System.out.println("Enter First Name : ");
+        String fname = scanner.nextLine();
+        Boolean b = Pattern.matches("^[A-Z]{1}[a-z]{2,}$",fname);
         if (b){
-            System.out.println(lname+" is Valid Last Name");
+            System.out.println(fname+" is Valid First Name");
         }
         else{
-            System.out.println("Invalid last name");
+            System.out.println("Invalid First name");
         }
     }
 }
