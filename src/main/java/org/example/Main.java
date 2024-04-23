@@ -13,7 +13,7 @@ public class Main {
         String lname = scanner.nextLine();
         Boolean b = Pattern.matches("^[A-Z]{1}[a-z]{2,}$",lname);
         if (b){
-            System.out.println(lname+" is Valid First Name");
+            System.out.println(lname+" is Valid Last Name");
         }
         else{
             System.out.println("Invalid last name");
