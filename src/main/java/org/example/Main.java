@@ -19,8 +19,7 @@ public class Main {
         String fname = scanner.nextLine();
         if (checkName(fname)){
             System.out.println(fname+" is Valid First Name");
-        }
-        else{
+        }else{
             System.out.println("Invalid First Name");
         }
         System.out.println("Enter Last Name : ");
