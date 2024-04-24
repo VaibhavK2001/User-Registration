@@ -15,6 +15,11 @@ public class Main {
         return b;
     }
 
+    public static boolean checkMobile(String number){
+        boolean b = Pattern.matches("[0-9]{2,3} [0-9]{10}",number);
+        return b;
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -42,6 +47,14 @@ public class Main {
             System.out.println("Email Address is Valid");
         }else{
             System.out.println("Invalid Email Address");
+        }
+
+        System.out.println("Enter Mobile Number : ");
+        String mobile = scanner.nextLine();
+        if (checkMobile(mobile)){
+            System.out.println("Mobile Number is Valid");
+        }else{
+            System.out.println("Invalid Mobile Number");
         }
     }
 }
