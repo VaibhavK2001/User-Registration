@@ -25,6 +25,22 @@ public class Main {
         return b;
     }
 
+    public static void checkEmailList(){
+
+        String[] emails ={"abc@yahoo.com","abc-100@yahoo.com","abc.100@yahoo.com","abc111@abc.com","abc-100@abc.net","abc.100@abc.com.au","abc@1.com","abc@gmail.com.com","abc+100@gmail.com"};
+
+        System.out.println("\nVerifying Email List\n");
+
+        for (int i = 0; i < emails.length; i++) {
+            if (checkMail(emails[i])) {
+                System.out.println(emails[i]+" is Valid mail");
+            }
+            else{
+                System.out.println(emails[i]+" is NOT Valid mail");
+            }
+        }
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -69,5 +85,7 @@ public class Main {
         }else{
             System.out.println("Invalid Password");
         }
+
+        checkEmailList();
     }
 }
