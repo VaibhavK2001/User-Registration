@@ -21,7 +21,7 @@ public class Main {
     }
 
     public static boolean checkPass(String password){
-        boolean b = Pattern.matches("^(?=.*[A-Z]).{8,}$",password);
+        boolean b = Pattern.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?!.*[^a-zA-Z\\d].*[^a-zA-Z\\d])(?=.*[^a-zA-Z\\d]).{8,}$",password);
         return b;
     }
 
