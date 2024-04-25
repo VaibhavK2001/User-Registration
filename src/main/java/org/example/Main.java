@@ -20,6 +20,11 @@ public class Main {
         return b;
     }
 
+    public static boolean checkPass(String password){
+        boolean b = Pattern.matches("^[a-zA-Z0-9]{8,}$",password);
+        return b;
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -55,6 +60,14 @@ public class Main {
             System.out.println("Mobile Number is Valid");
         }else{
             System.out.println("Invalid Mobile Number");
+        }
+
+        System.out.println("Enter Password : ");
+        String password = scanner.nextLine();
+        if(checkPass(password)){
+            System.out.println("Password is Valid");
+        }else{
+            System.out.println("Invalid Password");
         }
     }
 }
